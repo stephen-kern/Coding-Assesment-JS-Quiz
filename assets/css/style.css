@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary: #D0C9C0;
+    --secondary: #EFEAD8;
+    --bg: #6D8B74;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--primary);
+    padding: 2%;
+}
+
+header p, header a{
+    background-color: var(--bg);
+    border-radius: 5px;
+    padding: 1rem;
+    color: var(--secondary);
+}
