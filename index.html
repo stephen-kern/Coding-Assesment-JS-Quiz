@@ -8,19 +8,38 @@
     <title>Javascript Quiz</title>
 </head>
 <body>
-    <header>
-        <input type="button" id="view-scores" value="View Scores">
-        <p id="timer"></p>
-    </header>
-    <main>
-        <div id="score-div"></div>
-        <div id="question-div"></div>
-        <div id="multiple-choice"></div>
-        <form action="" id="results"></form>
-        <div id="start-button-box">
-            <input type="button" id="start-btn" value="Begin Quiz">
-        </div>
-    </main>
+  <!-- Timer -->
+  <div class="timer">Time: <span id="time">0</span></div>
+
+  <!-- Intro -->
+  <div class="wrapper">
+    <div id="start-screen" class="start">
+      <h1>Quiz!</h1>
+      <p>
+        Beginner Javascript Quiz!
+      </p>
+      <button id="start">Start Quiz</button>
+    </div>
+
+    <!-- Questions -->
+    <div id="questions" class="hide">
+      <h2 id="question-title"></h2>
+      <div id="choices" class="choices"></div>
+    </div>
+
+    <!-- End Game -->
+    <div id="end-screen" class="hide">
+      <h2>THE END!</h2>
+      <p>Your final score is <span id="final-score"></span>.</p>
+      <p>
+        Enter initials: <input type="text" id="initials" max="3" />
+        <button id="submit">Submit</button>
+      </p>
+    </div>
+
+    <div id="feedback" class="feedback hide"></div>
+  </div>
+
 
     <script src="./assets/js/app.js"></script>
 </body>
